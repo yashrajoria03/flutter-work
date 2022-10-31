@@ -8,6 +8,7 @@ class MyDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final imgUrl = "https://avatarfiles.alphacoders.com/654/65454.png";
     return Drawer(
       child: Container(
         color: Colors.deepPurple,
@@ -18,12 +19,12 @@ class MyDrawer extends StatelessWidget {
               padding: EdgeInsets.zero,
               child: UserAccountsDrawerHeader(
                 currentAccountPicture: CircleAvatar(
-                  backgroundImage: AssetImage("assets/user.jpeg"),
+                  backgroundImage: NetworkImage(imgUrl),
                 ),
                 // currentAccountPictureSize: Size.square(80),
                 margin: EdgeInsets.zero,
-                accountName: Text("Yash Rajoria"),
-                accountEmail: Text("yash@gmail.com"),
+                accountName: Text("Peter Griffin"),
+                accountEmail: Text("gigitty@gmail.com"),
               ),
             ),
             Divider(
